@@ -153,8 +153,3 @@ def makeCSV(data, **directory):
 	with open(absolute_path, 'wb') as file:
 		wr = csv.writer(file, quoting=csv.QUOTE_ALL)
 		wr.writerow(data)
-
-restaurant_data = Scrape()
-restaurant_data = Clean(restaurant_data)
-
-data = makeDF(restaurant_data)
